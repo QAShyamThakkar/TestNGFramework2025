@@ -1,0 +1,11 @@
+Steps for the TestNG Framework:
+
+1. Create Maven Project
+
+2. Add dependencies in pom.xml file (Selenium, TestNG, Common.io)
+
+3. Move resources folder from main to test, and delete main
+
+4. Create firs com.auotmation.test package
+   create first class LoginTest,
+   create first test case - verifyUserLoginSuccessful
