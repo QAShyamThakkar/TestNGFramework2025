@@ -8,4 +8,15 @@ Steps for the TestNG Framework:
 
 4. Create firs com.auotmation.test package
    create first class LoginTest,
-   create first test case - verifyUserLoginSuccessful
+   create first test case - verifyUserLoginSuccessful (LoginTest)
+
+5. Create second test case - verifyUserCanAddToCart (CartTest)
+
+6. Utils
+
+7. Property File
+
+    1. Make one file under resources with extension .properties
+    2. The same can be read under Java Class with Properties class object
+
+8. Page Object Model
