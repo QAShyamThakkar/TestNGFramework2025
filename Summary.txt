@@ -12,11 +12,24 @@ Steps for the TestNG Framework:
 
 5. Create second test case - verifyUserCanAddToCart (CartTest)
 
-6. Utils
-
-7. Property File
+6. Property File
 
     1. Make one file under resources with extension .properties
     2. The same can be read under Java Class with Properties class object
 
-8. Page Object Model
+7. Utils
+
+    1. Created Property Utils (Using under Base Test, LoginTest, Cart Test)
+    2. Created Driver Utils (Using under Base Test)
+
+8. Page Object Model (POM)
+
+   Steps Implemented First Time:
+
+   1. Created com.automation.pages package and created required pages (java class)
+   2. The code from Login Test, we moved to Login Page and Home Page based POM
+   3. Under Login Page and Home Page, separated actions and webelements using @Findby
+   4. Created openWebsite method under login Page which use driver
+   5. We get the driver under BasePage and Extended BasePage to All the Page
+   6. We need PageFactory under Constructor to BasePage to initialise all @FindBy
+

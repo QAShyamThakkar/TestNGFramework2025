@@ -10,22 +10,19 @@ import java.time.Duration;
 
 public class BaseTest {
 
-    WebDriver driver;
+   static WebDriver driver;
 
     @BeforeMethod
     public void setUP() {
-
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.get("https://www.saucedemo.com/");
+        DriverUtils.initDriver();
+        driver = DriverUtils.getDriver();
 
         PropertyReaderUtils.intiProperty();
     }
 
     @AfterMethod
     public void cleanUp() {
-        driver.quit();
+        DriverUtils.quitDriver();
     }
 
 }
