@@ -1,5 +1,8 @@
 package com.automation.test;
 
+import com.automation.pages.CartPage;
+import com.automation.pages.HomePage;
+import com.automation.pages.LoginPage;
 import com.automation.utils.DriverUtils;
 import com.automation.utils.PropertyReaderUtils;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +21,10 @@ public class BaseTest {
         driver = DriverUtils.getDriver();
 
         PropertyReaderUtils.intiProperty();
+
+        LoginPage loginPage = new LoginPage();
+        HomePage homePage = new HomePage();
+        CartPage cartPage = new CartPage();
     }
 
     @AfterMethod
